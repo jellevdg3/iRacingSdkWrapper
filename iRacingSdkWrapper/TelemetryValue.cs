@@ -74,6 +74,10 @@ namespace iRacingSdkWrapper
             try
             {
                 var data = sdk.GetData(this.Name);
+                if (data == null)
+                {
+                    return;
+                }
 
                 var type = typeof(T);
                 if (type.BaseType != null && type.BaseType.IsGenericType && type.BaseType.GetGenericTypeDefinition() == typeof(BitfieldBase<>))
