@@ -56,7 +56,7 @@ namespace iRacingSimulator.Drivers
         public DriverResults Results { get; private set; }
         public DriverSessionResults CurrentResults { get; set; }
         public DriverQualyResults QualyResults { get; set; }
-        public DriverLiveInfo Live { get; private set; }
+        public DriverLiveInfo Live { get; set; }
         public DriverChampInfo Championship { get; private set; }
         public DriverPrivateInfo Private { get; private set; }
 
